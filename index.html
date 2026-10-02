@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WWW — World Wide Web</title>
+  <meta name="description" content="Launch tokens into the world wide web. WWW is a Solana meme coin.">
+  <meta name="theme-color" content="#C8D4E0">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: "#C8D4E0",
+            paper: "#F4F6F5",
+            ink: "#12161C",
+            accent: "#143A61"
+          },
+          fontFamily: {
+            display: ["Syne", "Segoe UI", "sans-serif"],
+            sans: ["Outfit", "Segoe UI", "sans-serif"],
+            mono: ["IBM Plex Mono", "Consolas", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site">
+  <a class="skip" href="#top">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">
+        <img src="logo.jpg" alt="" width="40" height="40">
+        <span class="brand-name">WWW</span>
+        <span class="ticker">$WWW</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#how-to-buy">How to Buy</a>
+        <a href="#community">Community</a>
+        <a href="#chart">Chart</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu>
+          <span></span><span></span><span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <a class="btn btn-primary btn-sm" data-buy data-soon href="#">Buy Now</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-panel" id="mobile-menu" data-menu-panel hidden>
+    <a href="#about">About</a>
+    <a href="#how-to-buy">How to Buy</a>
+    <a href="#community">Community</a>
+    <a href="#chart">Chart</a>
+  </div>
+
+  <main id="top">
+    <section class="hero" aria-label="WWW">
+      <div class="hero-media">
+        <img src="banner.jpg" alt="A grid of websites across the world wide web." width="1500" height="500" fetchpriority="high">
+        <div class="hero-fade" aria-hidden="true"></div>
+      </div>
+      <div class="wrap hero-body">
+        <img class="hero-logo" src="logo.jpg" alt="WWW logo: a dollar sign beside a grid of bits." width="512" height="512">
+        <div class="hero-copy">
+          <h1 class="display">World Wide Web</h1>
+          <p class="chip"><span>$WWW</span><span class="chip-sep" aria-hidden="true">/</span><span>Solana</span></p>
+          <p class="tagline">Launch tokens into<br>the world wide web.</p>
+        </div>
+        <div class="ca-box">
+          <span class="ca-kicker">CA</span>
+          <code data-ca>TBA</code>
+          <button class="btn btn-primary btn-copy" type="button" data-copy data-label="Copy" aria-live="polite">Copy</button>
+        </div>
+        <div class="hero-actions flex flex-wrap items-center justify-center gap-3">
+          <a class="btn btn-primary" data-buy data-soon href="#">Buy Now</a>
+          <a class="btn btn-icon" data-twitter data-soon href="#" aria-label="WWW on X">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+        <p class="live"><span class="live-dot" aria-hidden="true"></span> Solana • Live</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">01 — The stream</p>
+          <h2>About</h2>
+          <p class="lede">www_stream posted the world wide web: a digital grid, a dollar sign, and a field of dots. WWW is that post, made tradable on Solana. The bio is the brief — launch tokens into the world wide web.</p>
+          <div class="bits" aria-hidden="true">
+            <span>1 0 1 0 1 0 1 0</span>
+            <span>0 1 0 1 0 1 0 1</span>
+            <span>1 0 1 0 1 0 1 0</span>
+            <span>0 1 0 1 0 1 0 1</span>
+          </div>
+        </header>
+        <div class="feature-grid grid grid-cols-1 md:grid-cols-3 gap-4">
+          <article class="card">
+            <span class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.75" d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>
+            </span>
+            <h3>Digital Grid</h3>
+            <p>The background is the web itself, drawn as a grid. Public pattern. No closed room.</p>
+          </article>
+          <article class="card">
+            <span class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M12 3v18M16.5 7.2c0-1.8-1.8-3-4.5-3S7.5 5.4 7.5 7.4 9.2 10 12 10.4c2.8.4 4.6 1.5 4.6 3.4S14.7 17.8 12 17.8s-4.6-1.2-4.6-3"/></svg>
+            </span>
+            <h3>Dollar Mark</h3>
+            <p>A dollar sign sits on the logo, in the open. The coin wears the same mark.</p>
+          </article>
+          <article class="card">
+            <span class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M5 19V5h10l4 4v10H5z"/><path fill="currentColor" d="M8 10h2v2H8zm3 0h2v2h-2zm3 0h2v2h-2zM8 13h2v2H8zm3 0h2v2h-2zm3 0h2v2h-2z"/></svg>
+            </span>
+            <h3>Grid of Dots</h3>
+            <p>Bits in rows beside the dollar. The matrix is the web, counted out one cell at a time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-to-buy">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">02 — Swap</p>
+          <h2>How to Buy</h2>
+          <p class="lede">Four moves on Solana. The contract stays TBA until the launch is live.</p>
+        </header>
+        <div class="highlight">
+          <p class="kicker">Chain</p>
+          <p><strong>You're on Solana.</strong> The wallet, the swap, and the chart all settle here. $WWW is built for one job: launch tokens into the world wide web.</p>
+        </div>
+        <div class="step-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <article class="card step">
+            <p class="step-no">01</p>
+            <h3>Create a wallet</h3>
+            <p>Install Phantom or Solflare. Keep the recovery phrase offline.</p>
+          </article>
+          <article class="card step">
+            <p class="step-no">02</p>
+            <h3>Add SOL</h3>
+            <p>Fund the wallet with Solana. You need it for the swap and the network fee.</p>
+          </article>
+          <article class="card step">
+            <p class="step-no">03</p>
+            <h3>Swap for $WWW</h3>
+            <p>Open the swap and set the output to the contract. Until launch, that address reads TBA.</p>
+          </article>
+          <article class="card step">
+            <p class="step-no">04</p>
+            <h3>Hold the stream</h3>
+            <p>Confirm, then watch the chart. You are in the launch into the world wide web.</p>
+          </article>
+        </div>
+        <div class="action-row flex flex-wrap items-center justify-center gap-3">
+          <a class="btn btn-primary" data-buy data-soon href="#">Swap on Dex</a>
+          <a class="btn btn-ghost" href="#chart">Open Chart</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="community">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">03 — Public</p>
+          <h2>Join Us</h2>
+          <p class="lede">The stream posts in the open. Follow it for the launch into the world wide web.</p>
+        </header>
+        <article class="social-card">
+          <span class="icon-bubble" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </span>
+          <div class="social-copy">
+            <h3>Follow on X</h3>
+            <p>www_stream posts the world wide web here. The launch, the contract, and the grid.</p>
+          </div>
+          <a class="btn btn-primary" data-twitter data-soon href="#">Follow on X</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="chart">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">04 — Market</p>
+          <h2>Live Chart</h2>
+          <p class="lede">Price and trades for $WWW on Solana. The DexScreener embed connects when the contract is published.</p>
+        </header>
+        <div class="chart-frame" data-chart-frame>
+          <div class="chart-empty">
+            <p class="kicker">DexScreener</p>
+            <h3>Chart pending</h3>
+            <p>The live embed appears when the contract is published.</p>
+            <p class="mono-line">CA · <span data-ca>TBA</span></p>
+          </div>
+          <svg class="spark" viewBox="0 0 400 90" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 68 C40 66 60 70 90 58 C130 42 150 64 190 46 C230 28 250 40 290 24 C330 10 360 22 400 14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <p class="chart-link-row">
+          <a class="text-link" data-chart-link data-soon href="#">Open on DexScreener</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <img src="logo.jpg" alt="" width="40" height="40">
+          <span class="brand-name">WWW</span>
+        </a>
+        <p>Launch tokens into the world wide web.</p>
+        <a class="btn btn-icon" data-twitter data-soon href="#" aria-label="WWW on X">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+      <nav aria-label="Footer">
+        <p class="foot-label">Quick Links</p>
+        <ul class="foot-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-to-buy">How to Buy</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#chart">Chart</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="foot-label">Contract</p>
+        <div class="ca-box ca-box-foot">
+          <span class="ca-kicker">CA</span>
+          <code data-ca>TBA</code>
+          <button class="btn btn-primary btn-copy" type="button" data-copy data-label="Copy" aria-live="polite">Copy</button>
+        </div>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <p>WWW is a meme coin on Solana for entertainment. Nothing here is financial advice or a promise of value. Tokens can go to zero. Read the contract before you swap.</p>
+      <p>© 2026 World Wide Web</p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
