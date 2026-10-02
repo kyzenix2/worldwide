@@ -584,15 +584,26 @@ button,
   margin-top: 22px;
 }
 
+.social-grid {
+  display: grid;
+  gap: 16px;
+}
+
 .social-card {
   display: grid;
-  gap: 18px;
-  align-items: center;
+  gap: 16px;
+  align-content: start;
+  justify-items: start;
   padding: 22px;
   border-radius: 18px;
   background: #12161c;
   color: var(--paper);
   box-shadow: 0 16px 40px rgba(16, 20, 24, 0.14);
+}
+
+.social-row {
+  display: flex;
+  gap: 8px;
 }
 
 .social-card .icon-bubble {
@@ -790,9 +801,12 @@ button,
 }
 
 @media (min-width: 720px) {
+  .social-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .social-card {
-    grid-template-columns: auto 1fr auto;
-    padding: 28px 32px;
+    padding: 28px;
   }
 }
 

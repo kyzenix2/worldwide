@@ -1,6 +1,7 @@
 const SITE = {
-  ca: "",
-  twitter: "",
+  ca: "GAwhcphCqCv5bKHmCiN4VDdNWfbXJL4npmkc8L3Q9S9H",
+  twitter: "https://x.com/worldwide_SOL",
+  telegram: "https://t.me/worldwide_sol",
   chainSlug: "solana",
 };
 
@@ -48,6 +49,7 @@ function setAnchor(el, href) {
 function applyLinks() {
   const ca = realCa();
   const twitter = realUrl(SITE.twitter);
+  const telegram = realUrl(SITE.telegram);
   const buy = ca ? buyUrl(ca) : "";
   const chart = ca ? chartUrl(ca) : "";
 
@@ -57,18 +59,23 @@ function applyLinks() {
 
   document.querySelectorAll("[data-buy]").forEach((el) => setAnchor(el, buy));
   document.querySelectorAll("[data-twitter]").forEach((el) => setAnchor(el, twitter));
+  document.querySelectorAll("[data-telegram]").forEach((el) => setAnchor(el, telegram));
   setAnchor(document.querySelector("[data-chart-link]"), chart);
 
   const frame = document.querySelector("[data-chart-frame]");
   if (!frame || !chart) return;
 
-  const iframe = document.createElement("iframe");
-  iframe.className = "chart-iframe";
-  iframe.src = `${chart}?embed=1&theme=light&info=0&trades=0`;
-  iframe.title = "WWW live chart on DexScreener";
-  iframe.loading = "lazy";
-  iframe.allowFullscreen = true;
-  frame.replaceChildren(iframe);
+  const src = `${chart}?embed=1&theme=light&info=0&trades=0`;
+  let iframe = frame.querySelector("iframe");
+  if (!iframe) {
+    iframe = document.createElement("iframe");
+    iframe.className = "chart-iframe";
+    iframe.title = "WWW live chart on DexScreener";
+    iframe.loading = "lazy";
+    iframe.allowFullscreen = true;
+    frame.replaceChildren(iframe);
+  }
+  if (iframe.getAttribute("src") !== src) iframe.src = src;
 }
 
 function copyText(text) {
